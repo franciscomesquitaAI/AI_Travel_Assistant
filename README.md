@@ -53,11 +53,7 @@ pip install whisper
 
 **Launch the Application**
 
-Run the application using the following command:
-
-```bash
-python <script_name>.py
-```
+Run the notebook
 
 The application will launch locally at:
 
