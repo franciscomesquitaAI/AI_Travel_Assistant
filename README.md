@@ -134,14 +134,15 @@ If FFmpeg is missing, install it as per the Installation section.
 
 ---
 
-Future Enhancements
-	•	Add support for more countries and languages.
-	•	Enhance audio transcription options for higher accuracy.
-	•	Integrate translation APIs for expanded language support.
-	•	Enable cloud sharing for collaborative travel planning.
+## Future Enhancements
+
+• Add support for more countries and languages.
+• Enhance audio transcription options for higher accuracy.
+• Integrate translation APIs for expanded language support.
+• Enable cloud sharing for collaborative travel planning.
 
 ---
 
-License
+## License
 
 This project is licensed under the MIT License.
