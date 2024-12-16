@@ -1,7 +1,3 @@
-You’re right to want every part of your project documentation in Markdown. The issue may be stemming from interpreting terminal outputs or additional comments as plain text rather than Markdown-ready content.
-
-Here’s an updated README.md, ensuring everything is Markdown-compatible, including terminal outputs, paths, warnings, and instructions:
-
 # Assistant for Travelers
 
 This project is a language assistant for travelers, enabling users to generate useful phrases in a selected language based on their travel needs. Users can input text, record audio, and select their destination country to receive tailored travel phrases.
