@@ -2,7 +2,7 @@ This project is a language assistant for travellers, enabling users to generate 
 It is inspired on: 
 
 ---
-### Main features
+## Main features
 
 - **Multi-modal Input:** Accepts both text and audio inputs for tasks such as ordering food, asking for directions, and more.
 
@@ -21,12 +21,13 @@ It is inspired on:
 
 There are some interesting features that i want to highlight here.
 
-1. **Multimodal input support**
+#### **Multimodal input support**
+
 The application allows users to input commands via **text** or **audio**. Audio inputs are processed using **OpenAI Whisper**, a robust speech-to-text model for transcribing audio into actionable text. The below image is presented in their github repository \[1]:
 
 ![AI Travel Assistant Whisper model](https://i.imgur.com/pOXeNu3.png)
 
-2.  **Language Model Integration**
+#### **Language Model Integration**
 
 Powered by **LangChain Ollama LLM** \[2], this application uses the **Mistral-Nemo** \[3] model to provide contextually relevant and language-specific responses.
 
@@ -42,7 +43,7 @@ Powered by **LangChain Ollama LLM** \[2], this application uses the **Mistral-Ne
 
 - **Seamless Integration with LangChain**: It integrates smoothly with the LangChain framework, making it easier to incorporate into modular applications like this one. This reduces development complexity and accelerates implementation.
 
-3. **Language-Specific Context**
+#### **Language-Specific Context**
 
 The application references a **JSON file (**utils/country_to_language.json**)** to map countries to their corresponding languages. This ensures accurate language-specific responses for popular destinations such as France, Germany, Italy, and Spain.
 
@@ -50,13 +51,13 @@ Users receive responses in the selected destination’s native language, making 
 
 <ins>Adding more countries or languages is as simple as updating the JSON file, allowing the application to scale easily.</ins>
 
-4. **In-context learning**
+#### **In-context learning**
 
 The system incorporates **few-shot learning** by referencing example queries stored in utils/fewshot_learning.txt. These examples guide the model on how to respond effectively.
 
 By combining these examples with the user’s query, the system generates highly relevant and accurate outputs. Also, developers can add more examples to the file to improve model performance or adapt the system for specific regions or user groups.
 
-5. **Gradio Interface for User Interaction**
+#### **Gradio Interface for User Interaction**
 
 I used Gradio library \[4] to make a clean and usable UI that make possible to users understand and interact with the app effortlessly. Look at how application looks like below:
 
@@ -70,15 +71,15 @@ Let me share with you some examples on how it works.
 
 **Note:** This is not just a translation system, it creates multiple ways to say something and related things on the same context. Then, you can choose what you think it suits you the best.
 
-1. How can i ask where is the closest train station on Italy?
+- How can i ask where is the closest train station on Italy?
 
 ![AI Travel Assistant ask train italy](https://i.imgur.com/7eLR97W.png)
 
-2. How to ask about the best restaurant to have dinner on the city (Spain)?
+- How to ask about the best restaurant to have dinner on the city (Spain)?
 
 ![AI Travel Assistant restaurant spain](https://i.imgur.com/QKT5rmG.png)
 
-3. How to know what is the equivalent to "thank you" and how to proper compliment someone (France)?
+- How to know what is the equivalent to "thank you" and how to proper compliment someone (France)?
  
 ![AI Travel Assistant compliment example](https://i.imgur.com/CJgjAud.png)
 
@@ -86,7 +87,7 @@ Let me share with you some examples on how it works.
 
 ---
 
-# Future directions
+## Future directions
 
 - **Expanding Language and Country Support**: Incorporate additional languages and countries by enhancing the utils/country_to_language.json file. This will broaden the application’s reach, making it more inclusive for travelers visiting diverse destinations. Introduce dialect support (e.g., Swiss German or Canadian French) to cater to regional variations in language usage.
 
