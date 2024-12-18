@@ -71,6 +71,7 @@ Let me share with you some examples on how it works.
 **Note:** This is not just a translation system, it creates multiple ways to say something and related things on the same context. Then, you can choose what you think it suits you the best.
 
 1. How can i ask where is the closest train station on Italy?
+
 ![AI Travel Assistant ask train italy](https://i.imgur.com/7eLR97W.png)
 
 2. How to ask about the best restaurant to have dinner on the city (Spain)?
